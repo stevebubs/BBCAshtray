@@ -7,7 +7,7 @@ module render_master_half() {
 
 module render_master() {
 render_master_half();
-translate([126,0,0]) mirror(v=1,0,0) render_master_half();
+translate([126,0,0]) mirror() render_master_half();
 };
 
 linear_extrude(height=10)
